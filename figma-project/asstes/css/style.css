@@ -171,6 +171,13 @@ h1,h2,h3,h4,h5,h6{
     font-size: 18px;
     transition: 0.5s;
 }
+.title{
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
 .title span {
     display: inline-block;
     font-family: var(--title-font);
@@ -423,13 +430,19 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: 05px;
 }
 .third-text .title h1:hover{
-    color:#704418;
-    letter-spacing:6px;
+   font-style: italic;
+}
+.frame{
+    transform-origin: 175px, 118.488px;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function:step-end
 }
 .frame:hover{
     cursor: pointer;
     text-decoration:line-through solid #2a2a2a;
-}
+} 
 /* fourth section */
 .rect{
     width:245px;
@@ -468,10 +481,11 @@ h1,h2,h3,h4,h5,h6{
 }
 .fourth-text h1{
     transition-behavior:normal;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in;
 }
 .fourth-text h1:hover{
-    font-size: 40px;
+    font-style:oblique;
 }
 /* fifth section */
 .gallery-section{
@@ -684,6 +698,13 @@ label{
     clip-path: polygon(40% 0, calc(100% - 40%), calc(100%-40%)100%, 40% 100% 0 calc(100%-40%), 0 40%);
     overflow: hidden;
     z-index: 1;
+}
+.eighth-text .title h1{
+    transition: 0.5s;
+    transition-delay: 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
 }
 .eighth-text .title h1:hover{
     text-shadow:-13px -13px 5px rgba(31, 30, 30, 0.305);;
